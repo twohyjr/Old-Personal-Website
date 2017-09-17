@@ -1,5 +1,16 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<!-- http://kevinjohngomez.com/ -->
+<div class="container-fluid main-container">
+    <ul class="nav justify-content-center main-nav" >
+      <li class="nav-item">
+          {{#link-to 'home' tagName='li' class="nav-link"}}
+            Home
+          {{/link-to}}
+      </li>
+      <li class="nav-item">
+          {{#link-to 'twohys-movies.discover' tagName='li' class="nav-link"}}
+            Twohys Movies
+          {{/link-to}}
+      </li>
+    </ul>
+    {{outlet}}
+</div>

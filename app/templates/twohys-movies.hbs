@@ -1,0 +1,33 @@
+<!-- #17a2b8 -->
+<header class="twohys-movies-header">
+    <div class="container text-center">
+        <h1 class="display-3">Welcome to 2e's Movies</h1>
+        <p style="font-size:1.6em; padding:0;margin:0;">A place for Twohy to organize movies.</p>
+    </div>
+</header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark twohys-movies-navbar">
+    <a class="navbar-brand" href="#">
+        <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg" alt="Logo" height="42" width="42">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            {{#link-to 'twohys-movies.discover' tagName='li' class="nav-link"}}
+                Discover
+            {{/link-to}}
+        </li>
+        <li class="nav-item">
+            {{#link-to 'home' tagName='li' class="nav-link"}}
+                Movies
+            {{/link-to}}
+        </li>
+        <li class="nav-item">
+            {{#link-to 'home' tagName='li' class="nav-link"}}
+                2e's Collection
+            {{/link-to}}
+        </li>
+      </ul>
+    </div>
+</nav>
+
+{{outlet}}
