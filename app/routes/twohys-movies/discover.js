@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Route.extend({
     theMovieDb: Ember.inject.service(),
     currentMovieToSearch: null,
-    model(params){
+    model(){
         var obj = {};
         var currentMovieToSearch = this.get('currentMovieToSearch');
         if(currentMovieToSearch !== '' && currentMovieToSearch !== null){
