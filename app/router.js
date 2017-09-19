@@ -9,6 +9,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('twohys-movies', function() {
     this.route('discover');
+    this.route('my-collection');
   });
   this.route('home');
 });

@@ -16,5 +16,8 @@ export default DS.Model.extend({
     backdrop_path: attr('string'),
     adult: attr('boolean'),
     overview: attr('string'),
-    release_date: attr('date')
+    release_date: attr('moment', {format: 'yyyy-MM-dd'}),
+    hasRating: Ember.computed('release_date', function() {
+        return this.get('vote_average') > 0;
+    })
 });
