@@ -12,7 +12,8 @@ export default Ember.Route.extend({
 
         return Ember.RSVP.hash({
           now_playing: this.store.findAll('discover'),
-          movies: this.store.query('movie', obj)
+          movies: this.store.query('movie', obj),
+          movie: this.store.query('movie',obj)
         });
     },
     setupController(controller, models) {
@@ -20,10 +21,11 @@ export default Ember.Route.extend({
         controller.set('movies', models.movies);
     },
     actions: {
-        setTheThing(movie){
+        setTheCurrentMovieToSearch(movie){
             this.set('currentMovieToSearch', movie);
             this.refresh();
         }
+
     }
 
 });
