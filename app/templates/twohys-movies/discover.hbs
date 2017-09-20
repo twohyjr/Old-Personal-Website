@@ -7,11 +7,19 @@
     </div>
 </div>
 
+
+
 <div style="background: #393939; width: 100%; min-height: 300px; color: white; padding: 20px; font-size: 2em;">
-    <!-- TODO: Make this into a component -->
+    <!-- Movie Details Modal -->
+    {{#if isShowingModal}}
+        {{#modal-dialog onClose="toggleModal" targetAttachment="center" translucentOverlay=true animatable=false}}
+            {{movie-details movie=currentSelectedMovie}}
+        {{/modal-dialog}}
+    {{/if}}
+
     {{#each movies as |movie|}}
         {{#if movie.hasRating}}
-            {{movie-list-box movie=movie}}
+            {{movie-list-box movie=movie showMovieDetails='showMovieDetails'}}
         {{/if}}
     {{/each}}
 </div>
