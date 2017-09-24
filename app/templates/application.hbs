@@ -13,4 +13,60 @@
       </li>
     </ul>
 </div> -->
-    {{outlet}}
+
+<div class="container-fluid" style="background: red; padding: 0; margin: 0;  color: white;">
+    <div class="content-main" style="background: blue;  margin: auto; margin-bottom: 100px;  width: 1000px;">
+
+        <header class="header-main" style="background: green; height: 285px; margin-top: 180px; overflow: hidden;">
+            <section class="avatar" style="background: orange; height: 250px; width: 250px; position: absolute; margin: -130px 0 0 300px; overflow: visible;">
+                <div class="avatar-img-section" style="border-radius: 50%; background: yellow; width: 100%; height: 100%; overflow: visible;">
+                    <!-- TODO: Put image here -->
+                </div>
+            </section>
+            <section class="logo" style="background: pink; width: 640px; margin: 140px auto 0 auto; padding: 0;">
+                <h1 class="logo-display" style="width: 100%; text-align: center; overflow: hidden; font-size: 4em; padding: 7px;">Rick Twohy</h1>
+            </section>
+            <section class="title" style="width: 640px; background: cyan; margin: auto;">
+                <h2 class="title-display" style="text-align: center;">Title stuff goes here</h2>
+            </section>
+        </header>
+
+        <nav class="nav-main" style="background: grey; height: 145px; padding: 0 105px; border-top: 5px solid #393939; border-bottom: 5px solid #393939; overflow: hidden;">
+            <ul class="links" style="margin: 0; padding: 0; list-style: none;">
+                <li class="link-about" style="width: 20%; text-align: center; float:left; border: 1px solid black;">
+                    <div style="height: 150px; background: blue;">
+
+                    </div>
+                </li>
+                <li class="link-blog" style="width: 20%; text-align: center; float:left; border: 1px solid black;">
+                    <div style="height: 150px; background: blue;">
+
+                    </div>
+                </li>
+                <li class="link-experience" style="width: 20%; text-align: center; float:left; border: 1px solid black;">
+                    <div style="height: 150px; background: blue;">
+
+                    </div>
+                </li>
+                <li class="link-projects" style="width: 20%; text-align: center; float:left; border: 1px solid black;">
+                    <div style="height: 150px; background: blue;">
+
+                    </div>
+                </li>
+                <li class="link-contact" style="width: 20%; text-align: center; float:left; border: 1px solid black;">
+                    <div style="height: 150px; background: blue;">
+
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="content-main" style="background: purple; padding: 0 105px;">
+            {{outlet}}
+        </div>
+
+        <footer style="padding: 20px 0 70px 0; text-align: center;">
+            &copy; COPYRIGHT 2016 - {{moment-format comment.createdAt 'Y'}} Rick Twohy
+        </footer>
+    </div>
+</div>
