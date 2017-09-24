@@ -11,7 +11,6 @@ Router.map(function() {
     this.route('discover');
     this.route('my-collection');
   });
-  this.route('home');
 });
 
 export default Router;
