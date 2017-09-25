@@ -11,6 +11,9 @@ export default Ember.Component.extend({
     ctx: null,
 
     angle: 0,
+    willDestroy: function(){
+        $(window).unbind('resize', this.get('resizeHandler'));
+    },
     didInsertElement: function(){
         this.setupCanvas();
     },
@@ -38,8 +41,6 @@ export default Ember.Component.extend({
                 }
             )
         }
-
-
         function drawFlakes(){
 
             ctx.clearRect(0,0,W, H);
