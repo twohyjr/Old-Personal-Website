@@ -124,6 +124,14 @@
     color: #717171;
 }
 
+.home-page-container{
+    width: 100%;
+    min-height: 300px;
+    padding: 50px 30px;
+    text-align: center;
+    display: block;
+}
+
 @font-face {
     font-family: myFont;
     src: url('/assets/fonts/Gridking.ttf');
