@@ -2,6 +2,27 @@
 <div class="container-fluid main-full-container"></div>
 <div class="scrollable-main-container">
     <div class="main-content-container">
-        
+        <div class="content-header">
+            <section class="content-header-avatar">
+                <img src="/assets/images/circle-avatar.png" />
+            </section>
+            <section class="content-header-logo">
+                Rick Twohy
+            </section>
+        </div>
+        <div class="nav-main">
+
+        </div>
+        <div class="content-body">
+            {{outlet}}
+        </div>
+        <div class="content-footer">
+
+        </div>
+        <div class="content-copywrite">
+            <h5 style="text-align: center;">
+                &copy; COPYWRITE 2016 - {{moment-format (now) 'Y'}} RICK TWOHY
+            </h5>
+        </div>
     </div>
 </div>
