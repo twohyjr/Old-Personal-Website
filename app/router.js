@@ -11,6 +11,7 @@ Router.map(function() {
     this.route('discover');
     this.route('my-collection');
   });
+  this.route('projects');
 });
 
 export default Router;

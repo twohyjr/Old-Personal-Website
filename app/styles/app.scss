@@ -87,16 +87,9 @@
 
 .content-header-logo{
     text-align: center;
-    font-family: myFont;
+    font-family: computerFont;
     font-size: 65px;
     color: #454545;
-}
-
-.nav-main{
-    height: 60px;
-    background: #393939;
-    width: 100%;
-    float: left;
 }
 
 .content-body{
@@ -132,7 +125,60 @@
     display: block;
 }
 
+
+// ---------------------------------
+//         Main Navigation
+// ---------------------------------
+
+$navHeight: 80px;
+//This element is the nav wrapper on the navs parent page
+.nav-main{
+    height: $navHeight;
+    background: #212121;
+    width: 100%;
+    float: left;
+}
+
+.main-nav-container{
+    height: $navHeight;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+
+    .nav-link:not(.active):hover {
+        cursor: pointer;
+        .nav-text{
+            >.glyph-menu-item{
+                color: white;
+            }
+            .text-menu-item{
+                color: #99ca53;
+            }
+        }
+    }
+    .nav-text{
+        padding: 0 3px;
+    }
+    .glyph-menu-item{
+        color: #616161;
+        font-size: 1.8em;
+    }
+    .text-menu-item{
+        color: white;
+    }
+}
+
+
+
+// ---------------------------------
+//           Fonts
+// ---------------------------------
 @font-face {
-    font-family: myFont;
+    font-family: computerFont;
     src: url('/assets/fonts/Gridking.ttf');
+}
+
+@font-face {
+    font-family: titanFont;
+    src: url('/assets/fonts/The Dark Titan Classic.ttf');
 }
