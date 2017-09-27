@@ -13,6 +13,7 @@ Router.map(function() {
   });
   this.route('projects');
   this.route('experience');
+  this.route('contact');
 });
 
 export default Router;

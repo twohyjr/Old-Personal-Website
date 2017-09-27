@@ -104,15 +104,6 @@
     width: 100%;
 }
 
-.content-footer{
-    background: #393939;
-
-    float: left;
-
-    width: 100%;
-    height: 60px;
-}
-
 .content-copywrite{
     float: left;
 
@@ -180,6 +171,76 @@ $navHeight: 80px;
         color: white;
     }
 }
+// ---------------------------------
+//         Footer Navigation
+// ---------------------------------
+.content-footer{
+    background: #212121;
+    border-radius: 0 0 20px 20px;
+
+    float: left;
+
+    width: 100%;
+}
+
+.footer-nav-container{
+    width: 100%;
+    margin:10px 0 ;
+    .nav-icon-github{
+        float: left;
+        padding: 0 10px;
+        img:hover{
+            background: none;
+            content:url("/assets/images/social-icons/github-green.png");
+            cursor: pointer;
+        }
+    }
+
+    $socialIconSpacing: 0 20px;
+    .nav-icon-linkedin{
+        float: left;
+        padding: $socialIconSpacing;
+        img:hover{
+            background: none;
+            content:url("/assets/images/social-icons/linkedin-green.png");
+            cursor: pointer;
+        }
+    }
+    .nav-icon-spotify{
+        float: left;
+        padding: $socialIconSpacing;
+        img:hover{
+            background: none;
+            content:url("/assets/images/social-icons/spotify-green.png");
+            cursor: pointer;
+        }
+    }
+    .nav-icon-email{
+        float: left;
+        padding: $socialIconSpacing;
+        img:hover{
+            background: none;
+            content:url("/assets/images/social-icons/email-green.png");
+            cursor: pointer;
+        }
+    }
+    .nav-link{
+        padding: 0;
+    }
+    a{
+        background: none;
+    }
+    a:hover{
+        background: none !important;
+        cursor: default;
+    }
+    img{
+        height: 50px;
+        width: 50px;
+    }
+
+}
+
 
 // ---------------------------------
 //       All Pages Styling
@@ -189,6 +250,18 @@ $navHeight: 80px;
     font-family: titanFont;
     text-decoration: underline;
     padding-bottom: 5px;
+}
+
+.page-content-container{
+    display: block;
+
+    width: 100%;
+    min-height: 300px;
+    font-size: 20px;
+
+    padding: 50px 30px;
+
+    text-align: center;
 }
 
 // ---------------------------------
