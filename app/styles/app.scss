@@ -146,7 +146,16 @@ $navHeight: 80px;
 
     text-align: center;
     font-size: 1.6em;
-
+    .active{
+        .nav-text{
+            .glyph-menu-item{
+                color: white;
+            }
+            .text-menu-item{
+                color: #99ca53;
+            }
+        }
+    }
     .nav-link:not(.active):hover {
         cursor: pointer;
         .nav-text{
@@ -158,6 +167,8 @@ $navHeight: 80px;
             }
         }
     }
+
+
     .nav-text{
         padding: 0 3px;
     }
