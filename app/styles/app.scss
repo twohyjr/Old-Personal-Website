@@ -272,6 +272,63 @@ $navHeight: 80px;
 }
 
 // ---------------------------------
+//     Experience Page Styling
+// ---------------------------------
+.experience-card-wrapper{
+    height: auto;
+    background: #959595;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
+}
+
+.card .experience-card{
+    border-radius: 5px;
+}
+
+.experience-card-img{
+    width: 60%;
+    margin: auto;
+}
+
+.experience-card-body{
+    padding-top: 0 !important;
+}
+
+.card-title-wrapper{
+    color: #939393;
+    border-bottom: 2px solid #565656;
+    width: 50%;
+    margin: 0 auto 4px auto;
+    .years{
+        margin-top: -4px;
+    }
+    .state{
+        margin-top: -4px;
+        display: inline-block;
+    }
+}
+
+.card-title-year{
+    border: none;
+}
+
+.experienc-card-text{
+    font-size: .8em;
+    text-align: justify;
+    color: #757575;
+    line-height: 20px;
+    .card-link{
+        color: #22a139;
+    }
+}
+
+
+
+
+
+// ---------------------------------
 //           Fonts
 // ---------------------------------
 @font-face {
