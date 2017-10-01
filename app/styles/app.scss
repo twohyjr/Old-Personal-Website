@@ -337,8 +337,26 @@ $navHeight: 80px;
 }
 
 
+// ---------------------------------
+//     Projects Page Styling
+// ---------------------------------
+.projects-tech-list{
+    width: 100%;
+    display: block;
+    font-size: .8em;
+    ul{
+        float: left;
+        border-bottom: 1px solid #d1d1d1;
+        width: 100%;
+        li{
+            float: left;
+            text-align: center;
+            list-style: none;
+            color: #99ca53;
+        }
+    }
 
-
+}
 
 // ---------------------------------
 //           Fonts
